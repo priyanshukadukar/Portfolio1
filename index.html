@@ -775,7 +775,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -1680,93 +1680,114 @@
 
     <!-- Experience Section -->
     <section class="experience-section" id="experience" style="padding: 8rem 0; margin-top: 0;">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Experience</h2>
-                <p class="section-subtitle">My professional journey and internship experiences</p>
-            </div>
-            
-            <div class="experience-timeline" style="position: relative; margin-top: 4rem;">
-                <!-- Timeline line -->
-                <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background: var(--accent-blue); top: 0;"></div>
-                
-                <!-- Experience Item 1 -->
-                <div class="experience-item" style="display: flex; align-items: center; margin-bottom: 3rem; position: relative;">
-                    <div style="flex: 1; text-align: right; padding-right: 3rem;">
-                        <div class="experience-card" style="background: var(--light-gray); border-radius: 1.5rem; padding: 2rem; box-shadow: var(--shadow-light); transition: all 0.4s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-large)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-light)'">
-                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                                <div style="width: 50px; height: 50px; background: var(--accent-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; font-size: 1.2rem;">
-                                    💻
-                                </div>
-                                <div>
-                                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--navy-blue); margin-bottom: 0.25rem;">Web Development Intern</h3>
-                                    <p style="font-family: 'Inter', sans-serif; color: var(--accent-blue); font-weight: 600;">Arruster  Innovation</p>
-                                </div>
-                            </div>
-                            <p style="font-family: 'Inter', sans-serif; color: var(--muted-gray); font-weight: 500; margin-bottom: 0.5rem;">completed</p>
-                            <ul style="font-family: 'Inter', sans-serif; color: var(--muted-gray); line-height: 1.7; padding-left: 1.5rem;">
-                                <li>Built responsive web interfaces using React.js, HTML, CSS, and JavaScript</li>
-                                <!-- <li>Developed reusable components and integrated REST APIs</li> -->
-                                <li>Utilized Git/GitHub for version control and collaborated with a team using Agile/Scrum methodology</li>
-                                <li>Optimized site performance through code splitting, lazy loading, and DOM manipulation</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div style="width: 20px; height: 20px; background: var(--accent-blue); border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); z-index: 2;"></div>
-                    <div style="flex: 1; padding-left: 3rem;"></div>
-                </div>
-                
-                <!-- Experience Item 2 -->
-                <div class="experience-item" style="display: flex; align-items: center; margin-bottom: 3rem; position: relative;">
-                    <div style="flex: 1; padding-right: 3rem;"></div>
-                    <div style="width: 20px; height: 20px; background: var(--accent-blue); border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); z-index: 2;"></div>
-                    <div style="flex: 1; padding-left: 3rem;">
-                        <div class="experience-card" style="background: var(--light-gray); border-radius: 1.5rem; padding: 2rem; box-shadow: var(--shadow-light); transition: all 0.4s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-large)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-light)'">
-                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                                <div style="width: 50px; height: 50px; background: var(--accent-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; font-size: 1.2rem;">
-                                    🌐
-                                </div>
-                                <div>
-                                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--navy-blue); margin-bottom: 0.25rem;">Computer Networking Intern</h3>
-                                    <p style="font-family: 'Inter', sans-serif; color: var(--accent-blue); font-weight: 600;">MSIT Services</p>
-                                </div>
-                            </div>
-                            <p style="font-family: 'Inter', sans-serif; color: var(--muted-gray); font-weight: 500; margin-bottom: 0.5rem;">March 2023 - April 2023</p>
-                            <ul style="font-family: 'Inter', sans-serif; color: var(--muted-gray); line-height: 1.7; padding-left: 1.5rem;">
-                                <li>Configured and managed routers, switches, and firewalls to ensure secure and efficient network</li>
-                                <li>Assisted in the design and implementation of network infrastructure and gained practical knowledge</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Experience Item 3 -->
-                <div class="experience-item" style="display: flex; align-items: center; margin-bottom: 3rem; position: relative;">
-                    <div style="flex: 1; text-align: right; padding-right: 3rem;">
-                        <div class="experience-card" style="background: var(--light-gray); border-radius: 1.5rem; padding: 2rem; box-shadow: var(--shadow-light); transition: all 0.4s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-large)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-light)'">
-                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                                <div style="width: 50px; height: 50px; background: var(--accent-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; font-size: 1.2rem;">
-                                    🔒
-                                </div>
-                                <div>
-                                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--navy-blue); margin-bottom: 0.25rem;">Android Developer Virtual Intern </h3>
-                                    <p style="font-family: 'Inter', sans-serif; color: var(--accent-blue); font-weight: 600;"> AICTE - EduSkills with support from Google for Developers  
-</p>
-                                </div>
-                            </div>
-                            <p style="font-family: 'Inter', sans-serif; color: var(--muted-gray); font-weight: 500; margin-bottom: 0.5rem;">October 2024 - December 2024  </p>
-                            <ul style="font-family: 'Inter', sans-serif; color: var(--muted-gray); line-height: 1.7; padding-left: 1.5rem;">
-                                <li>uccessfully completed a 10-week Android Developer Virtual Internship, supported by Google for Developers, through the AICTE - EduSkills program.</li>
-                                <!-- <li>Analyzed security logs and monitored system activities to detect suspicious behavior and mitigate threats</li> -->
-                            </ul>
-                        </div>
-                    </div>
-                    <div style="width: 20px; height: 20px; background: var(--accent-blue); border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); z-index: 2;"></div>
-                    <div style="flex: 1; padding-left: 3rem;"></div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">My professional journey and internship experiences</p>
         </div>
-    </section>
+
+        <div class="experience-timeline" style="position: relative; margin-top: 4rem;">
+
+            <!-- Timeline vertical line -->
+            <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background: var(--accent-blue); top: 0;"></div>
+
+            <!-- ============ ITEM 1 ============ -->
+            <div class="experience-item" style="display: flex; align-items: center; margin-bottom: 3rem; position: relative;">
+                <div style="flex: 1; text-align: right; padding-right: 3rem;">
+                    <div class="experience-card" style="background: var(--light-gray); border-radius: 1.5rem; padding: 2rem; box-shadow: var(--shadow-light); transition: all 0.4s ease; cursor: pointer;"
+                        onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-large)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-light)'">
+
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem; justify-content: flex-end; text-align: right;">
+                            <div>
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--navy-blue); margin-bottom: 0.25rem;">Web Development Intern</h3>
+                                <p style="font-family: 'Inter', sans-serif; color: var(--accent-blue); font-weight: 600;">Arruster Innovation</p>
+                            </div>
+                            <div style="width: 50px; height: 50px; background: var(--accent-blue); color: white; border-radius: 50%; display: flex; margin-left: 1rem; align-items: center; justify-content: center; font-size: 1.2rem;">
+                                💻
+                            </div>
+                        </div>
+
+                        <p style="font-family: 'Inter', sans-serif; color: var(--muted-gray); font-weight: 500; margin-bottom: 0.5rem; text-align: left;">Completed</p>
+
+                        <ul style="font-family: 'Inter', sans-serif; color: var(--muted-gray); line-height: 1.7; padding-left: 1.5rem; text-align: left;">
+                            <li>Built responsive web interfaces using React.js, HTML, CSS, and JavaScript</li>
+                            <li>Utilized Git/GitHub for version control and collaborated with a team using Agile/Scrum methodology</li>
+                            <li>Optimized site performance through code splitting, lazy loading, and DOM manipulation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="width: 20px; height: 20px; background: var(--accent-blue); border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); z-index: 2;"></div>
+
+                <div style="flex: 1; padding-left: 3rem;"></div>
+            </div>
+
+            <!-- ============ ITEM 2 ============ -->
+            <div class="experience-item" style="display: flex; align-items: center; margin-bottom: 3rem; position: relative;">
+
+                <div style="flex: 1; padding-right: 3rem;"></div>
+
+                <div style="width: 20px; height: 20px; background: var(--accent-blue); border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); z-index: 2;"></div>
+
+                <div style="flex: 1; padding-left: 3rem;">
+                    <div class="experience-card" style="background: var(--light-gray); border-radius: 1.5rem; padding: 2rem; box-shadow: var(--shadow-light); transition: all 0.4s ease; cursor: pointer;"
+                        onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-large)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-light)'">
+
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem; text-align: left;">
+                            <div style="width: 50px; height: 50px; background: var(--accent-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; font-size: 1.2rem;">
+                                🌐
+                            </div>
+                            <div>
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--navy-blue); margin-bottom: 0.25rem;">Computer Networking Intern</h3>
+                                <p style="font-family: 'Inter', sans-serif; color: var(--accent-blue); font-weight: 600;">MSIT Services</p>
+                            </div>
+                        </div>
+
+                        <p style="font-family: 'Inter', sans-serif; color: var(--muted-gray); font-weight: 500; margin-bottom: 0.5rem;">March 2023 - April 2023</p>
+
+                        <ul style="font-family: 'Inter', sans-serif; color: var(--muted-gray); line-height: 1.7; padding-left: 1.5rem;">
+                            <li>Configured and managed routers, switches, and firewalls to ensure secure and efficient network</li>
+                            <li>Assisted in the design and implementation of network infrastructure and gained practical knowledge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============ ITEM 3 ============ -->
+            <div class="experience-item" style="display: flex; align-items: center; margin-bottom: 3rem; position: relative;">
+                <div style="flex: 1; text-align: right; padding-right: 3rem;">
+                    <div class="experience-card" style="background: var(--light-gray); border-radius: 1.5rem; padding: 2rem; box-shadow: var(--shadow-light); transition: all 0.4s ease; cursor: pointer;"
+                        onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-large)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-light)'">
+
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem; justify-content: flex-end; text-align: right;">
+                            <div>
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--navy-blue); margin-bottom: 0.25rem;">Android Developer Virtual Intern</h3>
+                                <p style="font-family: 'Inter', sans-serif; color: var(--accent-blue); font-weight: 600;">AICTE - EduSkills with support from Google for Developers</p>
+                            </div>
+                            <div style="width: 50px; height: 50px; background: var(--accent-blue); color: white; border-radius: 50%; display: flex; margin-left: 1rem; align-items: center; justify-content: center; font-size: 1.2rem;">
+                                🔒
+                            </div>
+                        </div>
+
+                        <p style="font-family: 'Inter', sans-serif; color: var(--muted-gray); font-weight: 500; margin-bottom: 0.5rem; text-align: left;">October 2024 - December 2024</p>
+
+                        <ul style="font-family: 'Inter', sans-serif; color: var(--muted-gray); line-height: 1.7; padding-left: 1.5rem; text-align: left;">
+                            <li>Successfully completed a 10-week Android Developer Virtual Internship, supported by Google for Developers, through the AICTE - EduSkills program.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="width: 20px; height: 20px; background: var(--accent-blue); border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); z-index: 2;"></div>
+
+                <div style="flex: 1; padding-left: 3rem;"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <!-- Projects Section -->
     <section class="projects-section" id="projects">
@@ -1860,9 +1881,95 @@ and safety of visually impaired individuals.
                     </div>
                 </div>
                 
-
+<!-- Project Card 3 -->
+<div class="project-card">
+    <div class="project-image">
+        <div class="project-image-placeholder">
+            <span class="project-icon">🛒</span>
+        </div>
+        <div class="project-overlay">
+            <div class="overlay-content">
+                <a href="https://portuslogistics.co/" class="project-link" title="View Live Demo" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+                <a href="#" class="project-link" title="View Source Code">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"></path>
+                    </svg>
+                </a>
             </div>
         </div>
+    </div>
+
+    <div class="project-content">
+        <h3 class="project-title">PortUs Logistics Website</h3>
+        <p class="project-description">
+            I developed a modern logistics and supply chain website for PortUs Logistics, featuring a clean UI, responsive layout, and service-focused design. 
+            The site showcases company services, client solutions, and a professional business identity with smooth navigation and optimized performance.
+        </p>
+        <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive Design</span>
+        </div>
+        <div class="project-buttons">
+            <a href="https://portuslogistics.co/" class="btn btn-sm" target="_blank">View Live</a>
+            <a href="#" class="btn btn-sm btn-outline">Source Code</a>
+        </div>
+    </div>
+</div>
+
+    
+
+<!-- Project Card 4 -->
+<div class="project-card">
+    <div class="project-image">
+        <div class="project-image-placeholder">
+            <span class="project-icon">🤖</span>
+        </div>
+        <div class="project-overlay">
+            <div class="overlay-content">
+                <a href="#" class="project-link" title="View Live Demo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+                <a href="#" class="project-link" title="View Source Code">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">AI Chatbot Assistant</h3>
+        <p class="project-description">
+            Developed an intelligent chatbot capable of answering queries, performing tasks, and interacting using natural language processing (NLP).
+        </p>
+        <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Machine Learning</span>
+        </div>
+        <div class="project-buttons">
+            <a href="#" class="btn btn-sm">View Live</a>
+            <a href="#" class="btn btn-sm btn-outline">Source Code</a>
+        </div>
+    </div>
+</div>
+
+            </div>
+            
+        </div>
+        
     </section>
 
     <!-- Certifications Section -->
